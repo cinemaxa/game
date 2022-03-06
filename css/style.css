@@ -1,0 +1,148 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+
+body {
+  background: url("../img/pexels-miguel-á-padriñán-255379.jpg") 0 0 / cover
+    no-repeat fixed;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.button {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  background: #c7f3d1;
+  width: max-content;
+  border-radius: 20px;
+}
+.button:hover {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.5);
+}
+.button:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+.button-game {
+  font-family: "Shizuru", cursive;
+  font-size: 24px;
+}
+.game {
+  overflow: hidden;
+  display: none;
+
+  min-height: 800px;
+
+  padding: 30px;
+}
+.game:target {
+  display: block;
+}
+.game__block {
+  border-radius: 10px;
+}
+.one {
+  background: #08fc9a;
+  height: 50px;
+  width: 80px;
+}
+.one:hover {
+  width: 100%;
+  box-shadow: -5px -5px 25px 0px #cef859;
+}
+.two {
+  height: 100px;
+  width: 55px;
+  visibility: hidden;
+  background: #08ecfc;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.one:hover + .two,
+.two:hover {
+  visibility: visible;
+}
+.two:hover {
+  margin-left: 0px;
+  width: 100%;
+  box-shadow: -5px -5px 25px 0px #58dff7;
+}
+
+.three {
+  visibility: hidden;
+  background: #e2c7ff;
+  height: 100px;
+  width: 30px;
+}
+
+.two:hover + .three,
+.three:hover {
+  visibility: visible;
+}
+.three:hover {
+  width: 50%;
+  box-shadow: -5px -5px 25px 0px #f859d0;
+}
+
+.four {
+  visibility: hidden;
+  background: #aeffc7;
+  margin-left: 48%;
+  height: 140px;
+  width: 19px;
+}
+.three:hover + .four,
+.four:hover {
+  visibility: visible;
+}
+.four:hover {
+  background: #ffd494;
+  box-shadow: -5px -5px 25px 0px #fa761d;
+}
+.four:hover + .five,
+.five:hover {
+  visibility: visible;
+}
+.five {
+  visibility: hidden;
+  background: #68b37f;
+  margin-left: 48%;
+  height: 14px;
+  width: 488px;
+  box-shadow: -5px -5px 25px 0px #cef859;
+}
+.five:hover + .six,
+.six:hover {
+  visibility: visible;
+}
+.six {
+  visibility: hidden;
+}
+.img {
+  display: block;
+  margin: 0 auto;
+}
+.end {
+  visibility: hidden;
+  font-family: "Shizuru", cursive;
+  font-size: 36px;
+  width: max-content;
+  color: rgb(150 148 151);
+  height: 60px;
+  padding: 5px;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  box-shadow: 0px -10px 50px 23px rgb(164 91 241 / 86%);
+}
+
+.five:hover ~ .end,
+.end:hover {
+  visibility: visible;
+}
+/* .class-1 ~ .class-2{}
+Стили применяются к class-2, если он находится на том же уровне что и class-1, через 1 тег, 
+через 2... Не важно, главное чтобы стоял не перед class-1 */
